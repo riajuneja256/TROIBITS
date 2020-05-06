@@ -143,3 +143,9 @@
         font-size: 40px;
     }
 } */
+
+.arrow-right{
+    width: 15px;
+    height: 12px;
+    padding-left: 10px;
+}

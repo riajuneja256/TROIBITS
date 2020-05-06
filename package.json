@@ -8,6 +8,8 @@
     "google-map-react": "^1.1.7",
     "jquery": "^3.4.1",
     "react": "^15.5.4",
+    "react-animated-number": "^0.4.4",
+    "react-countup": "^4.3.3",
     "react-dom": "^15.5.4",
     "react-router-dom": "^5.1.2",
     "react-slick": "^0.25.2",

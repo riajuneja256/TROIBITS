@@ -23,11 +23,12 @@
 }
 .home-part.left-string .int-line{
   width: 80px;
-   margin-left: 30px;
-    margin-top: 8px;
+  margin-left: 30px;
+  margin-top: 8px;
   height: 2px;
   background-color: #0072FF;
 }
+
 .home-part.left-string .description {
   margin-top: 18px;
    margin-left: 30px;
@@ -44,8 +45,7 @@
   font-size: 20px;
   width: 180px;
   height: 28px;
-  padding-top: 1px;
-
+  padding-top: 12px;
   padding-bottom: 10px;
   text-align: center;
   border: 1px solid #DDDDDD;
@@ -66,7 +66,8 @@
 }
 #colorShadow {
   position: absolute;
-  background : radial-gradient(closest-side, #0061D0, #0F4080, #1E1E1E)
+  background : radial-gradient(closest-side, #0061D0, #0F4080, #1E1E1E);
+  border: none;
 }
 #container img{
   width: 100%;

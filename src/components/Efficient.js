@@ -1,12 +1,15 @@
 import React from 'react';
 import '../assets/styles/efficient.css';
 import '../assets/styles/common.css';
+import CountUp from 'react-countup';
 
 import backKeyBoardImg    from '../assets/images/back-keyboard.jpg';
 import partnerSkypeImg    from '../assets/images/partner-skype.png';
 import partnerHpImg       from '../assets/images/partner-hp.png';
 import partnerIntelImg    from '../assets/images/partner-intel.png';
-import partnerNikeImg     from '../assets/images/partner-nike.png';
+import partnerNikeImg     from '../assets/images/partner-nike_new.png';
+import arrowRightImg     from '../assets/images/arrow-right.png';
+
 
 const Effcient = () => {
     return (
@@ -33,7 +36,7 @@ const Effcient = () => {
                             <div className="label">Nike</div>
                         </div>
                     </div>
-                    <div className="chat-btn">Let's chat</div>
+                    {/* <div className="chat-btn">Let's chat</div> */}
                 </div>
 
                 <div className="efficient-part center-about">
@@ -44,7 +47,7 @@ const Effcient = () => {
                     <div className="description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     </div>
-                    <div className="chat-btn">Let's chat</div>
+                    <div className="chat-btn">Let's chat<img src = {arrowRightImg} className="arrow-right"></img></div>
                 </div>
 
                 <div className="efficient-part right-number">
@@ -57,8 +60,6 @@ const Effcient = () => {
                         <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

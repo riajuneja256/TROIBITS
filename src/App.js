@@ -7,6 +7,7 @@ import FBXLoader from 'three-fbxloader-offical';
 
 import './App.css';
 
+import Exp from './components/example'
 import Header from './components/Header';
 import Home      from './components/Home';
 import Services    from './components/Services';
@@ -30,7 +31,8 @@ import cubeFile from './assets/models/total.FBX';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.wWidth = jQuery(window).width(); this.wHeight = jQuery(window).height(); this.pageY = 0;
+    this.wWidth = jQuery(window).width(); 
+    this.wHeight = jQuery(window).height(); this.pageY = 0;
     this.cWidth = 0; this.cHeight = 0;
     this.cube = null; this.cubeLength = 4; this.inBox = null;
     this.lightArr = []; this.lineArr = []; this.blackArr = []; this.boardArr = [];
@@ -112,8 +114,8 @@ class App extends Component {
     cLeft = hWidth * -0.34;
     cTop = (this.wHeight - this.cHeight)/2 - 160;
     if (this.device == "mobile") cTop = this.cHeight * -0.23 + 120;
-    sWidth = this.cWidth * 0.32;
-    sHeight = this.cWidth * 0.18;
+    sWidth = this.cWidth * 0.22;
+    sHeight = this.cWidth * 0.14;
     sLeft = (hWidth-sWidth)/2;
     // sTop = this.wHeight/2 + this.cHeight * 0.02;
     sTop = cTop + this.cHeight * 0.7;
