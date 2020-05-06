@@ -1,0 +1,152 @@
+.yolo{
+    width: 100%;
+    height: 760px;
+    background-color: #1B1B1B;
+    position: relative;
+    padding-bottom: 200px;
+}
+.yolo-content {position: relative;}
+
+.yolo-content .yolo-part{
+    float: left;
+}
+.yolo-content .left-taxi{
+    width: 25%;
+    margin-top: 160px;
+}
+.yolo-content .left-taxi .notice-blue{
+    color: #0061D0;
+    font-size: 20px;
+}
+.yolo-content .left-taxi .yolo-title{
+    margin-top: 10px;
+    font-size: 50px;
+}
+.yolo-content .left-taxi .description{
+    font-size: 18px;
+    color: #666666;
+    margin-top: 50px;
+    width: 100%;
+}
+.yolo-content .left-taxi .arrow-part{
+    margin-top: 80px;
+}
+.yolo-content .left-taxi .arrow-part img{
+    width: 25px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.yolo-content .center-img{
+    width: 50%;
+    height: 640px;
+    position: relative;
+}
+.yolo-content .center-img .yolo-cube-img{
+    position: absolute;
+    width: 100%;
+}
+.yolo-content .center-img .yolo-phone-img{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 1s;
+}
+.yolo-content .center-img:hover .yolo-phone-img{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.yolo-content .right-app{
+    margin-top: 190px;
+    margin-left: 5%;
+}
+.yolo-content .right-app .app-title{
+    font-size: 24px;
+}
+.yolo-content .right-app .app-content{
+    margin-top: 70px;
+}
+.yolo-content .right-app .app-content-item{
+    padding-left: 45px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #666666;
+    font-family: "ProximaNovaRegular";
+    cursor: pointer;
+}
+.yolo-content .right-app .app-content-item.active{
+    border-left: 2px solid #0061D0;
+    color: #DDDDDD;
+}
+.yolo .yolo-footer{
+    width: 200px;
+    background-color: #1B1B1B;
+    z-index: 1;
+}
+.yolo .yolo-footer::before{
+    right: 100%;
+    border-top-color: #1B1B1B;
+}
+
+.yolo.port {height: calc(100vw + 290px);}
+.yolo.port .yolo-content {padding-top: 30px;}
+.yolo.port .yolo-part { position: absolute; width: 100%; margin: 0;}
+.yolo.port .right-app { top: 90px; }
+.yolo.port .right-app .app-title{ text-align: center; font-size: 30px; }
+.yolo.port .right-app .app-content{ margin-top: 20px; position: relative;}
+.yolo.port .right-app .app-content-item{ margin-top: 0px; padding-left: 0px; position: absolute; font-size: 14px;}
+.yolo.port .right-app .app-content .app-content-first{ left: calc(50% - 150px);}
+.yolo.port .right-app .app-content .app-content-yolo{ left: calc(50% - 20px);}
+.yolo.port .right-app .app-content .app-content-third{ right: calc(50% - 150px);}
+.yolo.port .right-app .app-content-item.active{ border-left: none; }
+.yolo.port .center-img{top: 200px; height: 100vw;}
+.yolo.port .yolo-content .center-img .yolo-cube-img {width: 320px; left: calc(50% - 160px); top: 20px;}
+.yolo.port .yolo-content .center-img .yolo-phone-img {left: calc(50% - 90px); width: 180px;}
+.yolo.port .left-taxi {top: calc(100vw + 200px);}
+.yolo.port .left-taxi .notice-blue{position: absolute; top: 50px; left: calc(50% - 44px); font-size: 14px;}
+.yolo.port .left-taxi .yolo-title { text-align: center; font-size: 34px;}
+.yolo.port .left-taxi .description{text-align: center; width: 90%; margin-left: 5%; margin-top: 20px; font-size: 14px;}
+.yolo.port .left-taxi .arrow-part{position: relative; margin: 0;}
+.yolo.port .left-taxi .arrow-part img{position: absolute; top: calc(-50vw - 220px); margin: 0; top: -360px;}
+.yolo.port .left-taxi .arrow-part :nth-child(1){left: calc(50% - 180px);}
+.yolo.port .left-taxi .arrow-part :nth-child(2){right: calc(50% - 180px);;}
+.yolo.port .yolo-footer{ width: 30vw; }
+
+/* @media only screen and (max-width: 1280px) {
+    .yolo {padding-bottom: 30px;}
+    .yolo .yolo-content {padding-top: 120px;}
+    .yolo .left-taxi { margin-top: 80px; }
+    .yolo .left-taxi .description{ margin-top: 20px; }
+    .yolo .left-taxi .arrow-part{ margin-top: 20px; }
+    .yolo .right-app { margin-top: 110px; }
+    .yolo .right-app .app-content{ margin-top: 30px; }
+}
+@media only screen and (max-width: 960px) {
+    .yolo {height: 600px;}
+    .yolo .left-taxi .description{ display: none; }
+    .yolo .right-app { margin-left: 0%; margin-top: 80px;}
+    .yolo .right-app .app-title{ font-size: 20px; }
+}
+
+@media only screen and (max-width: 700px) {
+    .yolo .yolo-footer{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .yolo {height: 850px;}
+    .yolo .yolo-content {padding-top: 30px;}
+    .yolo .right-app { display: none; }
+    .yolo .yolo-part {float: none; width: 100%;}
+    .yolo .left-taxi .notice-blue{text-align: center;}
+    .yolo .left-taxi .yolo-title{text-align: center;}
+    .yolo .left-taxi .arrow-part{text-align: center; margin-left: 40px;}
+}
+@media only screen and (max-width: 500px) {
+    .yolo {height: 750px;}
+}
+@media only screen and (max-width: 400px) {
+    .yolo {height: 650px;}
+} */
+
