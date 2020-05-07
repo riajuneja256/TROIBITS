@@ -59,11 +59,11 @@
     margin-top: 30px;
     border: 1px solid #666666;
     text-align: center;
-    height: 40px;
+    height: 50px;
     width: 180px;
     font-size: 24px;
     color: #DDDDDD;
-    padding-top: 10px;
+    padding-top: 8px;
 }
   
 .efficient .right-number{
@@ -82,7 +82,7 @@
     color: #666666;
 }
 
-.efficient.port {height: 970px;}
+.efficient.port {height: 970px;top: 110px;}
 .efficient.port .efficient-part{position: absolute; width: 100%;}
 .efficient.port .center-about{top: 140px;}
 .efficient.port .center-about .efficient-title{text-align: center; font-size: 16px;}
@@ -145,7 +145,7 @@
 } */
 
 .arrow-right{
-    width: 15px;
-    height: 12px;
+    width: 30px;
+    height: 15px;
     padding-left: 10px;
 }

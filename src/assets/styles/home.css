@@ -23,8 +23,8 @@
 }
 .home-part.left-string .int-line{
   width: 80px;
-  margin-left: 30px;
-  margin-top: 8px;
+  margin-left: 50px;
+  margin-top: 0px;
   height: 2px;
   background-color: #0072FF;
 }
@@ -96,9 +96,16 @@
   top: 0px;
 }
 .home.port .home-part.left-string{
-  width: 74%;
-  left: 13%;
+  width: 100%;
+  left: 2%;
   margin-top: 80px;
+}
+.home.port .home-part.left-string .int-line{
+  width: 80px;
+  margin-left: 130px;
+  margin-top: 0px;
+  height: 2px;
+  background-color: #0072FF;
 }
 .home.port .home-part.left-string .title {
   font-size: 18px;
@@ -108,9 +115,7 @@
   font-size: 60px;
   text-align: center;
 }
-.home.port .home-part.left-string .int-line {
-  margin-left: calc(50% - 30px);
-}
+
 .home.port .home-part.left-string .description {
   font-size: 16px;
   text-align: center;

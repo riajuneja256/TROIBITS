@@ -111,7 +111,7 @@
 .yolo.port .left-taxi .arrow-part img{position: absolute; top: calc(-50vw - 220px); margin: 0; top: -360px;}
 .yolo.port .left-taxi .arrow-part :nth-child(1){left: calc(50% - 180px);}
 .yolo.port .left-taxi .arrow-part :nth-child(2){right: calc(50% - 180px);;}
-.yolo.port .yolo-footer{ width: 30vw; }
+.yolo.port .yolo-footer{ width: 0vw; }
 
 /* @media only screen and (max-width: 1280px) {
     .yolo {padding-bottom: 30px;}

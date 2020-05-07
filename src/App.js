@@ -4,10 +4,11 @@ import jQuery from 'jquery';
 import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 import FBXLoader from 'three-fbxloader-offical';
-
+import {
+  isMobile
+} from "react-device-detect";
 import './App.css';
 
-import Exp from './components/example'
 import Header from './components/Header';
 import Home      from './components/Home';
 import Services    from './components/Services';
@@ -90,9 +91,10 @@ class App extends Component {
     this.device = ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )?"mobile":"web"; //|iPad
     this.wWidth = jQuery(window).width();
     this.wHeight = jQuery(window).height();
-
+console.log(this.device)
+console.log(isMobile);
     var hWidth = (this.wWidth > 1280)?1280: this.wWidth;
-    if (this.device == "mobile") {
+    if (isMobile) {
       // jQuery(".subpart-content").addClass("port");
       jQuery("#homeBack").addClass("port");
       jQuery(".header-wrap").addClass("port");
@@ -104,6 +106,9 @@ class App extends Component {
       jQuery(".contact").addClass("port");
       jQuery(".map").addClass("port");
       jQuery(".footer").addClass("port");
+      jQuery(".panel").addClass("port");
+      jQuery(".background-style").addClass("port");
+      
     }
     else hWidth = hWidth / 2;
     this.cWidth = hWidth * 1.68;

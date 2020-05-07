@@ -20,6 +20,13 @@ const Yolo = () => {
         selAppItem = str;
         jQuery(".app-content-item").removeClass("active");
         jQuery(".app-content-"+str).addClass("active");
+        // if(selAppItem == "yolo")
+        //     jQuery(".yolo-phone-img").src(yoloPhoneColorImg);
+        // else if(selAppItem == "Bit7Pay")
+        //     jQuery(".yolo-phone-img").src(yoloPhoneColorImg);
+        // else if(selAppItem == "Excursify")
+        //     jQuery(".yolo-phone-img").src(yoloPhoneColorImg);
+
     }
     function clickArrow(dir) {
         if (dir == "left") {
@@ -53,8 +60,8 @@ const Yolo = () => {
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>First app</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>First app</div>
                         <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Third one</div>
                     </div>
                 </div>

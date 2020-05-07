@@ -15,6 +15,10 @@
   font-family: "ProximaNovaThin";
   src: url("assets/fonts/Proxima\ Nova\ Thin.otf");
 }
+@font-face {
+  font-family: "FuturaPTBook";
+  src: url("assets/fonts/FuturaPTBook.otf");
+}
 * {
   font-family: "ProximaNovaRegular";
   color: #DDDDDD;
@@ -102,7 +106,7 @@ body {
   position: absolute;
   top: 4.5px;
   left: 65px;
-  font-family: 'ProximaNovaThin';
+  font-family: 'FuturaPTBook';
   font-size: 35px;
   color: #DDDDDD;
 }
