@@ -17,7 +17,7 @@
     font-size: 20px;
 }
 .img-arrow{
-    width: 18px;
+    width: 30px;
     vertical-align: middle;
     padding-left: 10px;
     height: 23px;
@@ -80,12 +80,13 @@
     color:#DDDDDD;
     word-break: break-all;
     transition: opacity 1s;
+    line-height: 20px;
 }
 .services-content .panels .panel-row .panel-item:hover {
     background: #0061D0;
 }
 .services-content .panels .panel-row .panel-item:hover .panel-title{
-    bottom: 100px;
+    bottom: 134px;
 }
 .services-content .panels .panel-row .panel-item:hover .description {
     opacity: 1;

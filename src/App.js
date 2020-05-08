@@ -10,14 +10,8 @@ import {
 import './App.css';
 
 import Header from './components/Header';
-import Home      from './components/Home';
-import Services    from './components/Services';
-import Yolo      from './components/Yolo';
-import Efficient from './components/Efficient';
-import Intro     from './components/Intro';
-import Contact   from './components/Contact';
-import Map       from './components/Map';
-import Footer    from './components/Footer';
+import Homepage from './components/homepage';
+import Footer from './components/Footer';
 
 import homeBackImg from './assets/images/home-back.png';
 import loadingImg from './assets/images/loading-logo.png';
@@ -305,17 +299,23 @@ console.log(isMobile);
 
   render() {
     return (
+    //   <Router>
+    //     <ul>
+    //       <li><Link to='/'>Home</Link></li>
+    //       <li><Link to='/topics'>Topics</Link></li>
+    //     </ul>
+    //   <hr/>
+    //   <Route exact path = '/' component = {Home}></Route>
+    //   <Route exact path = '/topics' component = {Topics}></Route>
+
+    // </Router>
+
       <div>
         <img id="homeBack" src={homeBackImg} />
         <Header />
         <div className="main-wrap">
-          <Home />
-          <Services />
-          <Yolo />
-          <Efficient />
-          <Intro />
-          <Contact />
-          <Map />
+          <Homepage/>
+
           <Footer />
         </div> 
 

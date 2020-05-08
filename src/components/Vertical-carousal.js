@@ -5,19 +5,24 @@ import '../assets/styles/exp.css';
 
   const data = [{
     id: 0,
-    header: '1Top App Development Company',
-    body: '1From idea to development, we support and stay with you in good and hard times till we celebrate our success together',
+    header: 'Product Design . Mobile App and Game Design . Industrial Design and Prototyping',
+    body: 'Our design is a key factor why we are able to create better products as we do a proper ideation , research, planning then create something on a blank piece of paper which stands out and is minimal. A good design is user centric and should be able to explain the idea and the product in a glimpse.',
     },
   {
     id: 1,
-    header: '2Top App Development Company',
-    body: '2From idea to development, we support and stay with you in good and hard times till we celebrate our success together',
+    header: 'Blockchain and Cryptocurrency App Development Company',
+    body: 'We have been developing Apps and Features on Blockchain for 3 Years now. We developed one of the first few Cryptocurrency Apps in India and implemented more than 100 Cryptocurrencies on different platforms.',
  },
   {
     id: 2,
-    header: '3Top App Development Company',
-    body: '3From idea to development, we support and stay with you in good and hard times till we celebrate our success together',
+    header: 'Internet of Things (I.O.T) and Business Automation Company',
+    body: 'We automate your business, homes and manufacturing units with our system of apps and specially designed beacon boxes of Arduino and Raspberry Pie Chip Boards. Our mobile apps enable you to access and control the system easily which enables you to save time , money and resources.',
      },
+  {
+    id: 3,
+    header: 'App Development Company and Dedicated Technology Partner or Technology Company',
+    body: 'We have been providing Android and iOS App Development services to customers across the globe for more than 5 Years.',
+  },
 ];
 class Vcarousal extends React.Component {
     constructor(props) {
@@ -27,14 +32,11 @@ class Vcarousal extends React.Component {
         buttonHover: false,
         buttonStyle: {
           color: '#ffffff' } };
-  
     }
     _changeActive(id) {
       this.setState({
         activeID: id,
          });
-  
-  
     }
     _buttonColour() {
       if (!this.state.buttonHover) {
@@ -80,7 +82,7 @@ export default Vcarousal;
     }}
   
   class Selectors extends React.Component {
-      
+
     _handleClick(e) {
       if (this.props.id !== this.props.activeID) {
         this.props._changeActive(this.props.id);
@@ -99,19 +101,17 @@ export default Vcarousal;
           _handleClick: this._handleClick,
           _changeActive: this.props._changeActive,
           activeID: this.props.activeID }))));
-  
     }}
   
   class Selector extends React.Component {
     render() {
         console.log("entered Selector")
-
       let componentClass = 'selector';
       if (this.props.activeID === this.props.id) {
         componentClass = 'selector active';
       }
       return (
-        React.createElement("div", { className: componentClass, onClick: this.props._handleClick.bind(this) }));
+        React.createElement("div", { className: componentClass, onClick: this.props._handleClick.bind(this)}));
     }}
   
   
