@@ -69,3 +69,67 @@
 @media only screen and (max-width: 680px) {
     .footer-content {display: none;}
 }
+
+.background-style{
+    background-color: #171717;
+    padding-left: 0%;
+}
+.background-style .block{
+    width: 210px !important;
+    text-align: left;
+    padding: 30px 0px !important;
+    display: inline-block;
+}
+
+.background-style .marL12{
+    margin-left: 12%;
+}
+
+.mar0{
+    margin: 0 !important;
+}
+.background-style .block .heading{
+    font-size: 20px;
+    color: #ACACAC;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.background-style .block .content{
+    font-size: 14px;
+    color: #999999;
+    padding: 10px 0px !important;
+}
+.content:hover{
+    color: #0073FF;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+.background-style.port{
+    background-color: #171717;
+    padding-left: 6%;
+}
+.background-style.port .block{
+    width: 170px !important;
+    text-align: left;
+    padding: 30px 0px !important;
+    display: inline-block;
+}
+
+.background-style.port .marL12{
+    margin-left: 0%;
+}
+
+.background-style.port .block .heading{
+    font-size: 20px;
+    color: #ACACAC;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+}
+.background-style.port .block .content{
+    font-size: 14px;
+    color: #999999;
+    padding: 10px 0px !important;
+}

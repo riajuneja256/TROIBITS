@@ -4,18 +4,14 @@ import jQuery from 'jquery';
 import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 import FBXLoader from 'three-fbxloader-offical';
-
+import {
+  isMobile
+} from "react-device-detect";
 import './App.css';
 
 import Header from './components/Header';
-import Home      from './components/Home';
-import Services    from './components/Services';
-import Yolo      from './components/Yolo';
-import Efficient from './components/Efficient';
-import Intro     from './components/Intro';
-import Contact   from './components/Contact';
-import Map       from './components/Map';
-import Footer    from './components/Footer';
+import Homepage from './components/homepage';
+import Footer from './components/Footer';
 
 import homeBackImg from './assets/images/home-back.png';
 import loadingImg from './assets/images/loading-logo.png';
@@ -30,7 +26,8 @@ import cubeFile from './assets/models/total.FBX';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.wWidth = jQuery(window).width(); this.wHeight = jQuery(window).height(); this.pageY = 0;
+    this.wWidth = jQuery(window).width(); 
+    this.wHeight = jQuery(window).height(); this.pageY = 0;
     this.cWidth = 0; this.cHeight = 0;
     this.cube = null; this.cubeLength = 4; this.inBox = null;
     this.lightArr = []; this.lineArr = []; this.blackArr = []; this.boardArr = [];
@@ -88,9 +85,10 @@ class App extends Component {
     this.device = ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )?"mobile":"web"; //|iPad
     this.wWidth = jQuery(window).width();
     this.wHeight = jQuery(window).height();
-
+console.log(this.device)
+console.log(isMobile);
     var hWidth = (this.wWidth > 1280)?1280: this.wWidth;
-    if (this.device == "mobile") {
+    if (isMobile) {
       // jQuery(".subpart-content").addClass("port");
       jQuery("#homeBack").addClass("port");
       jQuery(".header-wrap").addClass("port");
@@ -102,6 +100,9 @@ class App extends Component {
       jQuery(".contact").addClass("port");
       jQuery(".map").addClass("port");
       jQuery(".footer").addClass("port");
+      jQuery(".panel").addClass("port");
+      jQuery(".background-style").addClass("port");
+      
     }
     else hWidth = hWidth / 2;
     this.cWidth = hWidth * 1.68;
@@ -112,8 +113,8 @@ class App extends Component {
     cLeft = hWidth * -0.34;
     cTop = (this.wHeight - this.cHeight)/2 - 160;
     if (this.device == "mobile") cTop = this.cHeight * -0.23 + 120;
-    sWidth = this.cWidth * 0.32;
-    sHeight = this.cWidth * 0.18;
+    sWidth = this.cWidth * 0.22;
+    sHeight = this.cWidth * 0.14;
     sLeft = (hWidth-sWidth)/2;
     // sTop = this.wHeight/2 + this.cHeight * 0.02;
     sTop = cTop + this.cHeight * 0.7;
@@ -298,17 +299,23 @@ class App extends Component {
 
   render() {
     return (
+    //   <Router>
+    //     <ul>
+    //       <li><Link to='/'>Home</Link></li>
+    //       <li><Link to='/topics'>Topics</Link></li>
+    //     </ul>
+    //   <hr/>
+    //   <Route exact path = '/' component = {Home}></Route>
+    //   <Route exact path = '/topics' component = {Topics}></Route>
+
+    // </Router>
+
       <div>
         <img id="homeBack" src={homeBackImg} />
         <Header />
         <div className="main-wrap">
-          <Home />
-          <Services />
-          <Yolo />
-          <Efficient />
-          <Intro />
-          <Contact />
-          <Map />
+          <Homepage/>
+
           <Footer />
         </div> 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import jQuery from 'jquery';
  
 import { NavLink } from 'react-router-dom';
-import logoImg from '../assets/images/logo.png';
+import logoImg from '../assets/images/troibitsLogoff-11.png';
 import menuIcon from '../assets/images/menu-icon.png';
 import menuHomeImg from '../assets/images/menu-home.png';
 import menuHomeActiveImg from '../assets/images/menu-home-active.png';

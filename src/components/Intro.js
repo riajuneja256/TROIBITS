@@ -28,6 +28,7 @@ const Intro = () => {
                             <div className="slider-item">
                                 <div className="user-img">
                                     <img src={userAvatarImg}></img>
+                                    <div className="quotation-mark">&ldquo;</div>
                                 </div>
                                 <div className="user-info">
                                     <div className="user-detail">
@@ -44,6 +45,7 @@ const Intro = () => {
                             <div className="slider-item">
                                 <div className="user-img">
                                     <img src={userAvatarImg}></img>
+                                    <div className="quotation-mark">&ldquo;</div>
                                 </div>
                                 <div className="user-info">
                                     <div className="user-detail">
@@ -60,6 +62,7 @@ const Intro = () => {
                             <div className="slider-item">
                                 <div className="user-img">
                                     <img src={userAvatarImg}></img>
+                                    <div className="quotation-mark">&ldquo;</div>
                                 </div>
                                 <div className="user-info">
                                     <div className="user-detail">
