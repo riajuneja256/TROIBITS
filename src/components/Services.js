@@ -10,12 +10,14 @@ import panelLogoMaintence from '../assets/images/panel-logo-maintence.png';
 import panelLogoMarket    from '../assets/images/panel-logo-market.png';
 import panelLogoFuning    from '../assets/images/panel-logo-funing.png';
 import panelLogoChat      from '../assets/images/panel-logo-chat.png';
+import arrowDown          from '../assets/images/arrow-down.png';
 
 const Services = () => {
     return (
       <div className="services">
          <div className="notice top-tri tri-part">
-            <div className="label">Our Services</div>
+            <div className="label">Our Services<img src={arrowDown} className="img-arrow"></img></div>
+            
          </div>
          <div className="content-wrap">
             <div className="services-content subpart-content">
@@ -28,7 +30,7 @@ const Services = () => {
                            <img src={panelLogoStrategy}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Strategy</div> <div>&nbsp; and Consultation</div>
+                           <div>Strategy</div> <div>and Consultation</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -39,7 +41,7 @@ const Services = () => {
                            <img src={panelLogoBrand}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Brand</div> <div>&nbsp; and Setup</div>
+                           <div>Brand</div> <div>and Setup</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -50,7 +52,7 @@ const Services = () => {
                            <img src={panelLogoApp}></img>
                         </div>
                         <div className="panel-title">
-                           <div>App Develop</div> <div>&nbsp; iot and auto</div>
+                           <div>App Develop</div> <div>iot and auto</div>
                            {/*meny mation */}
                         </div>
                         <div className="description">
@@ -62,7 +64,7 @@ const Services = () => {
                            <img src={panelLogoProduct}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Product</div> <div>&nbsp; Design</div>
+                           <div>Product</div> <div>Design</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -75,7 +77,7 @@ const Services = () => {
                            <img src={panelLogoMaintence}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Maintenance</div> <div>&nbsp; and support</div>
+                           <div>Maintenance</div> <div>and support</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -86,7 +88,7 @@ const Services = () => {
                            <img src={panelLogoMarket}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Growth</div> <div>&nbsp; marketing</div>
+                           <div>Growth</div> <div>marketing</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -97,18 +99,29 @@ const Services = () => {
                            <img src={panelLogoFuning}></img>
                         </div>
                         <div className="panel-title">
-                           <div>Funing</div> <div>&nbsp; and investments</div>
+                           <div>Funing</div> <div>and investments</div>
                         </div>
                         <div className="description">
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         </div>
                      </div>
-                     <div className="panel-item panel-item-chat">
+                     <div className="panel-item">
+                        <div className="panel-logo">
+                           <img src={panelLogoFuning}></img>
+                        </div>
+                        <div className="panel-title">
+                           <div>Funing</div> <div>and investments</div>
+                        </div>
+                        <div className="description">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        </div>
+                     </div>
+                     {/* <div className="panel-item panel-item-chat">
                         <div className="panel-title">
                            Let's chat 
                            <img src={panelLogoChat}></img>
                         </div>
-                     </div>
+                     </div> */}
                   </div>
                </div>
             </div>

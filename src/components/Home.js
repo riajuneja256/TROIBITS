@@ -9,6 +9,7 @@ import Yolo      from './HomePart/Yolo';
 import Contact   from './Contact';
 import Map       from './Map';
 import Footer    from './Footer';
+import Vcarousal from './Vertical-carousal.js'
 
 
 import shadowBackImg from '../assets/images/shadow-back.png';
@@ -44,13 +45,7 @@ class Home extends Component {
             <div className="home">
                 <div className="home-content subpart-content">
                     <div className="left-string home-part">
-                        <div className="title">Top App Development Company</div>
-                      
-                        <div className="int-line"></div>
-                        <div className="description pro-thin">
-                            From idea to development, we support and stay with you in good and hard times till we celebrate our success together
-                        </div>
-                        <div className="chat-btn">Lets Chat!</div>
+                        <Vcarousal/>
                     </div>
                     <div className="right-webgl home-part" id="rightWebGL">
                         <div id="colorShadow"><img src={shadowBackImg} /></div>

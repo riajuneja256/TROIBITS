@@ -4,8 +4,9 @@ import '../assets/styles/common.css';
 import jQuery from 'jquery';
 
 import yoloCubeImg        from '../assets/images/yolo-cube.png';
-import yoloPhoneImg       from '../assets/images/yolo-phone.png'; //  phone-frame
-import yoloPhoneColorImg  from '../assets/images/yolo-phone-color.png'; //  phone-frame
+import PhoneColorImg1  from '../assets/images/Artboard1.png'; 
+import PhoneColorImg2  from '../assets/images/Artboard2.png'; 
+import PhoneColorImg3  from '../assets/images/Artboard3.png'; 
 import arrowLeftImg       from '../assets/images/arrow-left.png';
 import arrowRightImg      from '../assets/images/arrow-right.png';
 
@@ -20,17 +21,40 @@ const Yolo = () => {
         selAppItem = str;
         jQuery(".app-content-item").removeClass("active");
         jQuery(".app-content-"+str).addClass("active");
+        if(selAppItem == "yolo")
+        {
+            jQuery(".yolo-phone-img").attr("src", PhoneColorImg1);
+            jQuery(".notice-blue").html("Taxi booking");
+            jQuery(".yolo-title").html("YOLO");
+            jQuery(".description").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim");
+        }
+        else if(selAppItem == "Bit7Pay")
+        {
+            jQuery(".yolo-phone-img").attr("src", PhoneColorImg2);
+            jQuery(".notice-blue").html("Cryptocurrency App ");
+            jQuery(".yolo-title").html("Bit7Pay");
+            jQuery(".description").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim");
+        }
+        else if(selAppItem == "Excursify")
+        {
+            jQuery(".yolo-phone-img").attr("src", PhoneColorImg3);
+            jQuery(".notice-blue").html("Travel App");
+            jQuery(".yolo-title").html("Excursify");
+            jQuery(".description").html("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim");
+        }
+        
+
     }
     function clickArrow(dir) {
         if (dir == "left") {
-            if      (selAppItem == "first") clickApp('third');
-            else if (selAppItem == "yolo") clickApp('first');
+            if      (selAppItem == "first") clickApp('Excursify');
+            else if (selAppItem == "yolo") clickApp('Bit7Pay');
             else clickApp('yolo');
         }
         else {
             if      (selAppItem == "first") clickApp('yolo');
-            else if (selAppItem == "yolo") clickApp('third');
-            else clickApp('first');
+            else if (selAppItem == "yolo") clickApp('Excursify');
+            else clickApp('Bit7Pay');
         }
     }
 
@@ -48,14 +72,14 @@ const Yolo = () => {
                 </div>
                 <div className="yolo-part center-img">
                     <img className="yolo-cube-img" src={yoloCubeImg}></img>
-                    <img className="yolo-phone-img" src={yoloPhoneColorImg}></img>
+                    <img className="yolo-phone-img" src={PhoneColorImg1}></img>
                 </div>
                 <div className="yolo-part right-app">
                     <div className="app-title">App Showcase</div>
                     <div className="app-content">
-                        <div className="app-content-item app-content-first" onClick={() => clickApp('first')}>First app</div>
                         <div className="app-content-item app-content-yolo" onClick={() => clickApp('yolo')}>Yolo</div>
-                        <div className="app-content-item app-content-third" onClick={() => clickApp('third')}>Third one</div>
+                        <div className="app-content-item app-content-first" onClick={() => clickApp('Bit7Pay')}>Bit7Pay</div>
+                        <div className="app-content-item app-content-third" onClick={() => clickApp('Excursify')}>Excursify</div>
                     </div>
                 </div>
             </div>
