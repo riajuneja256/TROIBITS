@@ -19,7 +19,7 @@
     "react-slick": "^0.25.2",
     "react-useragent": "^1.1.2",
     "slick-carousel": "^1.8.1",
-    "three": "^0.114.0",
+    "three": "^0.125.0",
     "three-fbxloader-offical": "^1.0.0",
     "three-orbitcontrols": "^2.110.3"
   },
